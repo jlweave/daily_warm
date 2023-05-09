@@ -24,6 +24,7 @@ strs = ["eat","tea","tan","ate","nat","bat"]
 
 def group_anagrams(strs)
  strs.group_by { |s| s.chars.sort }.values
+ require 'pry'; binding.pry
 end
 
 p group_anagrams(strs)
